@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NFT Marketplace</title>
+	<link rel="shortcut icon" href="./img/homepage/storefront.svg" type="image/svg">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/media.css">
+	<link rel="stylesheet" href="./css/marketplace.css">
+
+	<script src="./js/marketplace.js" defer></script>
+
+</head>
+
+<body>
+	
+	<header class="header">
+		<div class="header__wrap">
+
+			<nav class="header__nav">
+
+				<div class="header__nav_logo">
+					<a href="index.html" class="header__nav_logo-link"><img class="header__nav_logo-img" src="./img/homepage/logo.png" alt="logo" width="244px"></a>
+				</div>
+				
+				<ul id="nav" class="header__nav_list">
+					<li class="header__nav_list-item"><a href="marketplace.html" class="header__nav_list-item-a">Marketplace</a></li>
+					<li class="header__nav_list-item"><a href="#" class="header__nav_list-item-a">Ranking</a></li>
+					<li class="header__nav_list-item"><a href="connect.html" class="header__nav_list-item-a">Connect a wallet</a></li>
+					<button class="header__nav_btn button">
+						<a class="header__nav_btn-link" href="createAccount.html">
+							<img src="./img/homepage/user.svg" alt="user">
+							Sign Up
+						</a>
+					</button>
+				</ul>
+				<button id="burger-btn" class="header__nav_burger buttonNav">
+					<span></span><span></span><span></span>
+				</button>
+			</nav>
+
+		</div>
+	</header>
+
+	<main class="main">
+
+		<section class="search">
+
+			<div class="search__wrap">
+				<h2>Browse Marketplace</h2>
+				<p>Browse through more than 50k NFTs on the NFT Marketplace.</p>
+				<search>
+					<form class="search__wrap_form">
+						<input type="search" name="search" id="search" placeholder="Search your favourite NFTs">
+						<span id="searchIcon"><img src="./img/marketplace/search_icon.svg" alt="" width="22px" height="22px"></span>
+					</form>
+				</search>
+			</div>
+		</section>
+
+		<section class="option">
+			<div class="option__wrap">
+
+				<button data-tab="nft" class="option__nfts active">
+					<h5 option__nfts_title>NFTs</h5>
+					<p class="option__nfts_number">302</p>
+				</button>
+
+				<button data-tab="collections" class="option__collections">
+					<h5 class="option__collections_title">Collections</h5>
+					<p class="option__collections_number">67</p>
+				</button>
+
+			</div>
+		</section>
+
+		<section class="card">
+			<div class="card__wrap">
+
+				<div class="card__item">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_1.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>Magic Mushroom 0325</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_1.png" alt="avatar" width="24px">
+							Shroomie
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__item">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_2.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>Happy Robot 032</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_2.png" alt="avatar" width="24px">
+							BeKind2Robots
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__item">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_3.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>Happy Robot 024</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_3.png" alt="avatar" width="24px">
+							BeKind2Robots
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__item">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_4.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>Designer Bear</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_4.png" alt="avatar" width="24px">
+							Mr Fox
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__item dNone">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_5.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>Colorful Dog 0356</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_5.png" alt="avatar" width="24px">
+							Keepitreal
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__item dNone">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_6.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>Dancing Robot 0312</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_6.png" alt="avatar" width="24px">
+							Robotica
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__item dNone">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_7.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>Cherry Blossom Girl 035</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_7.png" alt="avatar" width="24px">
+							MoonDancer
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__item dNone">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_8.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>Space Travel</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_8.png" alt="avatar" width="24px">
+							NebulaKid
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__item dNone_2">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_9.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>Sunset Dimension</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_9.png" alt="avatar" width="24px">
+							Animakid
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__item dNone_2">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_10.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>Desert Walk</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_10.png" alt="avatar" width="24px">
+							Catch 22
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__item dNone_2">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_11.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>IceCream Ape 0324</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_11.png" alt="avatar" width="24px">
+							Ice Ape Club
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card__item dNone_2">
+					<div class="card__item_img"><img class="card__item_img-img" src="./img/marketplace/img_12.png" alt="Galaxy"></div>
+					<div class="card__item_info">
+						<h5>Colorful Dog 0344</h5>
+						<div class="card__item_avatar">
+							<img src="./img/marketplace/avatar_12.png" alt="avatar" width="24px">
+							PuppyPower
+						</div>
+						<div class="card__item_price">
+							<div class="card__item_price-left">
+								<p>Price</p>
+								<p class="card__item_price-left eth">1.63 ETH</p>
+							</div>
+							<div class="card__item_price-right">
+								<p>Highest Bid</p>
+								<p class="card__item_price-right eth">0.33 wETH</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+<footer class="footer">
+	<div class="footer__wrap">
+
+		<div class="footer___nav">
+
+			<div class="footer__nav_links">
+				<div class="footer__nav_links-logo">
+					<a href="index.html" class="footer__nav_links-logo-link"><img src="./img/homepage/logo.png" alt="logo" width="244px"></a>
+				</div>
+				<p>NFT marketplace UI created with Anima for Figma.</p>
+				<p>Join our community</p>
+				<div class="footer__nav_links-icon">
+					<a href="https://discord.com/" target="_blank">
+						<img src="./img/homepage/social_icons/DiscordLogo.svg" alt="Discord">
+					</a>
+					<a href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank">
+						<img src="./img/homepage/social_icons/YoutubeLogo.svg" alt="Youtube">
+					</a>
+					<a href="https://twitter.com/?lang=ru" target="_blank">
+						<img src="./img/homepage/social_icons/TwitterLogo.svg" alt="Twitter">
+					</a>
+					<a href="https://www.instagram.com/" target="_blank">
+						<img src="./img/homepage/social_icons/InstagramLogo.svg" alt="Instagram">
+					</a>
+				</div>
+			</div>
+
+			<div class="footer__nav_explore">
+				<h5>Explore</h5>
+				<ul class="footer__nav_explore-list">
+					<li class="footer__nav_explore-list-item"><a href="marketplace.html">Marketplace</a></li>
+					<li class="footer__nav_explore-list-item"><a href="#">Rankings</a></li>
+					<li class="footer__nav_explore-list-item"><a href="connect.html">Connect a wallet</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__nav_btn">
+				<h5>Join Our Weekly Digest</h5>
+				<p>Get exclusive promotions & updates straight to your inbox.</p>
+				<form class="footer__nav_btn-form">
+					<input type="email" placeholder="Enter your email here" required>
+					<button class="footer__nav_btn-form-btn button">Subscribe</button>
+				</form>
+			</div>
+
+		</div>
+
+		<div class="footer_arrp">Ⓒ NFT Market. Use this template freely. Created by Roman Hostage.</div>
+
+	</div>
+</footer>
+
+</body>
+
+</html>

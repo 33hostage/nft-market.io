@@ -1,0 +1,128 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+}
+
+:root {
+	--font-work: "Work Sans", sans-serif;
+	--font-space: "Space Mono", monospace;
+}
+
+body {
+	background-color: #2B2B2B;
+	max-width: 100%;
+}
+
+.connect {
+	max-width: 100%;
+	margin-inline: 0 auto;
+}
+
+.connect__wrap {
+	max-width: 100%;
+	margin-inline: auto;
+	display: flex;
+	gap: 60px;
+}
+
+.connect__img {
+	background-image: url(../img/connect.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 610px;
+/* 	width: clamp(18.75rem, 12.819rem + 31.63vw, 38.125rem); */
+	height: 690px;
+}
+
+.connect__form {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 25px;
+}
+
+.connect__form_info {
+	max-width: 460px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.connect__form_info-title {
+	font-family: var(--font-work);
+	font-size: clamp(2.375rem, 0.85rem + 2.92vw, 3.188rem);
+	font-weight: 600;
+	line-height: 56px;
+	color: #fff;
+}
+
+.connect__form_info-text {
+	font-family: var(--font-work);
+	font-weight: 400;
+	font-size: clamp(1rem, 0.296rem + 1.35vw, 1.375rem);
+	color: #fff;
+}
+
+.connect__form_buttons {
+	margin-top: 40px;
+	width: clamp(19.688rem, 19.401rem + 1.53vw, 20.625rem);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.connect__form_btn {
+	background-color: #3B3B3B;
+	border: 1px solid #A259FF;
+}
+
+.connect__form_btn a {
+	font-size: 22px;
+	gap: 20px;
+}
+
+.connect__form_btn:active {
+	transition: all .5s;
+	transform: translateX(25px);
+}
+
+@media screen and (max-width: 690px) {
+
+	.connect__wrap {
+		display: flex;
+		flex-direction: column;
+		gap: 0px;
+	}
+
+	.connect__img {
+		max-height: 235px;
+		width: 100%;
+		background-size: 690px;
+	}
+
+	.connect__form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 30px;
+	}
+
+	.connect__form_info {
+		width: clamp(19.688rem, 19.401rem + 1.53vw, 20.625rem);
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	
+	.connect__form_info-text {
+		margin-bottom: 30px;
+	}
+}
+
